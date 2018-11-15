@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title> Automation of Text Growing and Shrinking </title>
+	<style>
+		p{
+			text-align: center;
+			margin: 250px 300px;
+			background: black;
+		}
+		h1{
+			text-align : center;
+			text-decoration: underline;
+			margin: 10px;
+			color: purple;
+		}
+	</style>
+	<script>
+		var t1,c=0;
+		function start(){
+			t1 = window.setInterval("incr()",100);
+		}
+		function incr(){
+			c+=1;
+			tab.innerHTML = "TEXT GROWING: "+c+"px";
+			tab.style.fontSize = c+"px";
+			tab.style.color = "red";
+			if(c>=50)
+			{
+				window.clearInterval(t1);
+				alert("To Continue with Text Shrinking; Press OK Button");
+				t1 = window.setInterval("decr()",100);
+			}
+		}
+		function decr(){
+			c-=1;
+			tab.innerHTML = "TEXT SHRINKING: "+c+"px";
+			tab.style.fontSize = c+"px";
+			tab.style.color = "blue";
+			if(c<=5)
+			{
+				window.clearInterval(t1);
+			}
+		}
+	</script>
+	</head>
+
+	<body onload = "start();" bgcolor = "green">
+		<h1>TEXT GROWING AND TEXT SHRINKING</h1>
+		<p id="tab"></p>
+	</body>
+</html>
+			

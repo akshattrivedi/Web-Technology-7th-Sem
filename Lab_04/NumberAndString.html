@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title> Determining String or Number </title>
+	<script>
+		function operation(str){
+			var result;
+			if(str == parseInt(str))
+			{
+				result = "Reverse of the number: "+str+" is "+str.split("").reverse().join("");
+			}
+			else
+			{
+				var flag = 0;
+				for(var i=0;i<str.length;i++)
+				{
+					switch(str.charAt(i))
+					{
+						case 'A':
+						case 'E':
+						case 'I':
+						case 'O':
+						case 'U':
+						case 'a':
+						case 'e':
+						case 'i':
+						case 'o':
+						case 'u': flag = 1;
+							break;
+					}
+					if(flag == 1)
+					{
+						result = "The left-most vowel in this String is "+str.charAt(i)+" and is located at postion: "+(i+1);
+						break;
+					}
+				}
+				if(flag == 0)
+					result = "There is no Vowel in this String";
+			}
+			demo.innerHTML = result;
+		}
+	</script>
+	<style>
+		h1{
+			color : red;
+			text-align : center;
+		}
+	</style>
+
+
+	</head>
+
+	<body bgcolor="green">
+		<h1> JavaScript Program </h1>
+		<h3>
+			<ol>
+				<li>Enter the Number to reverse it</li>
+				<li>Enter the String to retrieve first vowel</li>
+			</ol>
+		</h3>
+		<br><br><br>
+		<p>ENTER THE STRING/NUMBER: <input type="text" id="string" onblur="operation(this.value);"></p>
+		<h4> RESULT:</h4>
+		<br><br><br>
+		<p id="demo"></p>
+	</body>
+</html>
+
+
+		

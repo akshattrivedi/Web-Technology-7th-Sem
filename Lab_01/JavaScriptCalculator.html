@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title> JS Calculator </title>
+	<style>
+		h1{
+			text-align : center;
+			color: red;
+			background : black;
+			height : 40px;
+			margin: 20px 370px ;	
+		}
+		td{
+			background: black;
+			color: red;
+		}
+
+	</style>
+	</head>
+	<body bgcolor = "green">
+		<h1> JAVASCRIPT CALCULATOR </h1>
+		<table>
+			<tr><td>First Number:</td><td><input type="number" id="num1"></td></tr>
+			<tr><td>Second Number:</td><td><input type="number" id="num2"></td></tr>
+		</table>
+		<br><br>
+		<button value="+" onclick="opr(this.value);">+</button>
+		<button value="-" onclick="opr(this.value);">-</button>
+		<button value="*" onclick="opr(this.value);">*</button>
+		<button value="/" onclick="opr(this.value);">/</button>
+		<br><br>
+
+		<h3><p id="temporary">Result:<input type="number" id="res"></p></h3>
+
+		<script>
+			function opr(op){
+				var n1 = Number(num1.value);
+				var n2 = Number(num2.value);
+				switch(op)
+				{
+					case '+': res.value = n1+n2;
+						break;
+					case '-': res.value = n1-n2;
+						break;
+					case '*': res.value = n1*n2;
+						break;
+					case '/': res.value = n1/n2;
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>
