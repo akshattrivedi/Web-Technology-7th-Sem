@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> Square And Cube</title>
+	<script>
+		function sqandcube(){
+			var result = "<table><tr><th>NUMBER</th><th>SQUARE</th><th>CUBE</th></tr>";
+			for(var i=0;i<=10;i++)
+			{
+				result+="<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+i*i*i+"</td></tr>";
+			}
+			result+="</table>";
+			tab.innerHTML = result;
+		}
+	</script>
+
+	<style>
+		th,td{
+			border: 2px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+		table{
+			border: 2px solid black;
+			border-collapse: collapse;
+			margin: 1px 500px;
+		}
+	</style>
+
+	</head>
+
+	<body onload="sqandcube();">
+		<h1 style="text-align: center;">SQUARE AND CUBE TABLE</h1>
+		<p id="tab"></p>
+	</body>
+</html>

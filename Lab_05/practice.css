@@ -1,0 +1,45 @@
+*{
+	display: block;
+}
+
+STUDENT_DATA{
+	background: green;
+}
+
+HEADS{
+	color: black;
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+STUDENT{
+	margin: 10px;
+	border: 2px solid black;
+	height: 150px;
+	width: 500px;
+	background: black;
+	display: inline-block;
+}
+
+STUDENT_DATA{
+	padding:10px;
+	margin: 5px 50px;
+	font-family: "Times New Roman";
+}
+
+
+USN,BRANCH,YEAR,COLLEGE,EMAIL{
+	background: black;
+	color: white;
+	padding: 0px 10px;
+}
+
+NAME{
+	background: yellow;
+}
+
+EMAIL{
+	color: blue;
+	text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="practice.css"?>
+
+<STUDENT_DATA>
+	<HEADS> STUDENT DETAILS </HEADS>
+
+	<STUDENT>
+		<NAME>Akshat Trivedi</NAME>
+		<USN>1PE15CS013</USN>
+		<COLLEGE>PESIT South Campus</COLLEGE>
+		<BRANCH>Computer Science and Engineering</BRANCH>
+		<YEAR>2015</YEAR>
+		<EMAIL>akshat.trivedi08@gmail.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<NAME>Mohinish Nandwana</NAME>
+		<USN>1PE15CS087</USN>
+		<COLLEGE>PESIT South Campus</COLLEGE>
+		<BRANCH>Computer Science and Engineering</BRANCH>
+		<YEAR>2015</YEAR>
+		<EMAIL>mn@gmail.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<NAME>Divyaksh Shukla</NAME>
+		<USN>1PE15CS051</USN>
+		<COLLEGE>PESIT South Campus</COLLEGE>
+		<BRANCH>Computer Science and Engineering</BRANCH>
+		<YEAR>2015</YEAR>
+		<EMAIL>ds@gmail.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<NAME>Akshay Kumar</NAME>
+		<USN>1PE15CS014</USN>
+		<COLLEGE>PESIT South Campus</COLLEGE>
+		<BRANCH>Computer Science and Engineering</BRANCH>
+		<YEAR>2015</YEAR>
+		<EMAIL>ak@gmail.com</EMAIL>
+	</STUDENT>
+</STUDENT_DATA>
+

@@ -1,0 +1,50 @@
+<html>
+	<head> 
+		<title> STRING AND NUMBERS</title>
+	<script>
+		function operation(str){
+			var flag=0;
+			var result;
+			if(str==parseInt(str)){
+				result = "The reverse of the given number:"+str+" is "+str.split("").reverse().join("");
+			}
+			else
+			{
+				for(var i=0;i<str.length;i++)
+				{
+					switch(str.charAt(i))
+					{
+						case 'A':
+						case 'E':
+						case 'I':
+						case 'O':
+						case 'U':
+						case 'a':
+						case 'e':
+						case 'i':
+						case 'o':
+						case 'u':
+							flag = 1;
+							break;
+					}
+					if(flag == 1)
+					{
+						result = "The left-most vowel of the string "+str+" is "+str.charAt(i)+" and is at position "+(i+1);
+						break;
+					}
+					else{
+						result = "There is no Vowel in the string";
+					}
+				}
+			}
+			tab.innerHTML = result;
+		}
+
+	</script>
+	<body>
+		<h1> STRING AND NUMBERS </h1>
+		<h2> <input type="text" id="acceptString" onblur="operation(this.value);"> </h2>
+		<p id="tab"></p>
+	</body>
+</html>
+

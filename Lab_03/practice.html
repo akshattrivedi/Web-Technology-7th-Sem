@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>TEXT GROWING AND TEXT SHRINKING</title>
+	<script>
+		var c=0;
+		function start(){
+			t1 = window.setInterval("incr()",100);
+		}
+		function incr(){
+			c+=1;
+			tab.innerHTML = "TEXT GROWING"+c+"px" ;
+			tab.style.fontSize = c+"px";
+			tab.style.color = "red";
+			if(c>=50)
+			{
+				window.clearInterval(t1);
+				alert("Now the text will be Shrinking by 50 px");
+				t1 = window.setInterval("decr()",100);
+			}
+		}
+		function decr(){
+			c-=1;
+			tab.innerHTML = "TEXT SHRINKING"+c+"px";
+			tab.style.fontSize = c+"px";
+			tab.style.color = "blue";
+			if(c<=5)
+			{
+				window.clearInterval(t1);
+			}
+		}
+	</script>
+	<body onload="start()" bgcolor="black">
+		<p id="tab"></p>
+	</body>
+</html>
